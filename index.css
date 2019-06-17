@@ -1,8 +1,11 @@
 body{
     padding: 0px;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family:'Indie Flower', cursive;
     scroll-behavior: smooth;
     overflow-y:scroll;
+    background-color:rgb(47, 94, 247) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav{
     display: block;
@@ -30,7 +33,6 @@ nav ul li a {
 .home{
     height:100vh;
     width: 100%;
-    background-color: black;
     color: white;
     transition:all 1s;
 }
@@ -44,13 +46,16 @@ nav ul li a {
     height: 100vh;
 }
 .about h1{
+    padding: 150px;
     font-size: 4rem;
     text-align: center;
 }
 .contact{
     height: 100vh;
+    color:black;
 }
 .contact h1{
+    padding: 150px;
     text-align: center;
     font-size: 3rem;
 }
@@ -65,8 +70,16 @@ nav ul li a {
 }
 .panel:target{
     margin-top: 0%;
-    background-color: #ffcb00;
+    background-image: url(./2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.p1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 12%;
 }
 .h1{
     text-align: center;
@@ -77,5 +90,12 @@ footer{
 }
 .col-md-4{
     margin-top: 50%;
-    padding: 10px;
+    padding: 30px;
+}
+.box{
+    padding: 30px;
+    display: block;
+    width: 365px;
+    height: 215px;
+    border: 1px solid white;
 }
