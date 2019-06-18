@@ -75,6 +75,16 @@ nav ul li a {
     background-size: cover;
 
 }
+.progress{
+    width: 12rem;
+    height:8rem !important;
+    padding: 15px;
+    margin: 280px auto;
+
+}
+.progress-bar{
+  background-color:#28a745 !important;
+}
 .p1{
     text-align: center;
     font-weight: 600;
@@ -89,8 +99,9 @@ footer{
     text-align: center;
 }
 .col-md-4{
-    margin-top: 50%;
+    margin-top: -10%;
     padding: 30px;
+    position:absolute;
 }
 .box{
     padding: 30px;
@@ -98,4 +109,15 @@ footer{
     width: 365px;
     height: 215px;
     border: 1px solid white;
+}
+.progress::after {
+    content: '';
+    /* display: block; */
+    width: 0.6rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 0 0.2rem 0.2rem 0;
+    border: 10px solid white;
+    margin-top: 16px;
+    margin-left: 181px;
 }
