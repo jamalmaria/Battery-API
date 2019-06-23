@@ -30,6 +30,9 @@ nav ul li a {
     color: black;
 
 }
+.br{
+    display: none;
+}
 .home{
     height:100vh;
     width: 100%;
@@ -44,6 +47,8 @@ nav ul li a {
 }
 .about{
     height: 100vh;
+    text-align: center;
+    margin: 0 auto;
 }
 .about h1{
     padding: 150px;
@@ -59,6 +64,13 @@ nav ul li a {
     text-align: center;
     font-size: 3rem;
 }
+.cont1{
+    display: grid;
+    grid-gap: 8px;  
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 400px 400px 400px;
+}
+
 .panel{
     min-width:100%;
     overflow-x: hidden;
@@ -89,7 +101,7 @@ nav ul li a {
     text-align: center;
     font-weight: 600;
     font-size: 30px;
-    padding: 12%;
+    padding: 6%;
 }
 .h1{
     text-align: center;
@@ -98,16 +110,9 @@ nav ul li a {
 footer{
     text-align: center;
 }
-.col-md-4{
-    margin-top: -10%;
-    padding: 30px;
-    position:absolute;
-}
 .box{
-    padding: 30px;
+    padding: auto;
     display: block;
-    width: 365px;
-    height: 215px;
     border: 1px solid white;
 }
 .progress::after {
@@ -120,4 +125,65 @@ footer{
     border: 10px solid white;
     margin-top: 16px;
     margin-left: 181px;
+}
+@media only screen and (max-width:990px) {
+    .cont1{
+        display: block;
+    }
+    .discharge{
+        display: none;
+    }
+    .progress::after {
+        content: '';
+        display: block;
+        width: 0.6rem;
+        height: 4rem;
+        position: absolute;
+        border-radius: 0 0.2rem 0.2rem 0;
+        border: none;
+    }
+    .p1{
+        font-weight: 400;
+        color: black;
+    }
+    .br{
+        display: block;
+    }
+    .progress{
+        margin: 140px auto;
+    }
+}
+@media only screen and (max-width:479px) {
+    .cont1{
+        display: block;
+    }
+    .discharge{
+        display: none;
+    }
+    .contact h1{
+        padding: 55px;
+    }
+    .about h1{
+        padding: 55px;
+    }
+    .p1{
+        font-weight: 400;
+        font-size: 25px;
+        color: black;
+    }
+    .progress::after {
+        content: '';
+        display: block;
+        width: 0.6rem;
+        height: 4rem;
+        position: absolute;
+        border-radius: 0 0.2rem 0.2rem 0;
+        border: none;
+    }
+    .progress{
+        margin: 48px auto;
+    }
+    .br{
+        display: block;
+    }
 }

@@ -1,6 +1,6 @@
 navigator.getBattery().then(function(battery){
     // console.log(battery)
-    var level=(battery.level*100);
+    var level=(battery.level*100).toFixed(2);
     var showBatteryLevel = document.getElementById("percentage")
     showBatteryLevel.innerHTML = level;
     var discharge = (battery.dischargingTime/3600).toFixed(2);
